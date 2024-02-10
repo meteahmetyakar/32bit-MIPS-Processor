@@ -2,7 +2,13 @@
 |:-:|
 |<img src="https://github.com/meteahmetyakar/32bit-Mips-Processor/blob/main/images/single%20cycle%20processor.png"/>|
 
-#
+##
+<p align="center"> 
+  <a href="#">
+    <img src="https://github.com/meteahmetyakar/meteahmetyakar/blob/main/images/line.png"/>
+    <br></br>
+  </a>
+</p> 
 
 |Processor Design|
 |:-:|
