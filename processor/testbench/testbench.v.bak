@@ -1,0 +1,245 @@
+module testbench();
+
+
+	 reg clock;
+	 
+   
+    mips uut(
+        .clock(clock)
+    );
+
+  
+    always begin
+        #100 clock = ~clock;
+    end
+
+   
+    initial begin
+        clock =0;
+       
+    end
+
+    
+    initial begin
+        /*$readmemb("instructions.mem", uut.i0.instruction_memory);
+		  $readmemb("registers.mem", uut.i2.registers);
+		  $readmemb("memory.mem", uut.i10.memory);
+		  #20; clock = ~clock; #20; clock = ~clock;
+		  
+		  $writememb("registers.mem", uut.i2.registers);
+		  $writememb("memory.mem", uut.i10.memory);*/
+    end
+	 
+	 
+	 /*reg [31:0] address;
+    wire [31:0] shifted_address;
+
+    // Instantiate the shift_left_2 module
+    shift_left_2 shift_left_2_inst (
+        .shifted_address(shifted_address),
+        .address(address)
+    );
+
+    // Stimulus generation
+    initial begin
+        // Test case 1: Shift a positive value left by 2 bits
+        address = 32'b11111111111111111111111111111111;
+        #10;
+		  $display("Input address = %b, Shifted address = %b", address, shifted_address);
+
+        // Test case 2: Shift a negative value left by 2 bits
+        address = -32'b0011111111111110011111111111111;
+        #10;
+		  $display("Input address = %b, Shifted address = %b", address, shifted_address);
+        // Add more test cases as needed
+    end*/
+
+	 
+	 /*reg [15:0] imm;
+    wire [31:0] sign_ext_imm;
+
+    // Instantiate the sign_extend module
+    sign_extend sign_extend_inst (
+        .sign_ext_imm(sign_ext_imm),
+        .imm(imm)
+    );
+
+    // Stimulus generation
+    initial begin
+        // Test case 1: Positive value
+        imm = 16'b1000000011000000;
+        #10;
+		  $display("Input imm = %b, Sign-extended imm = %b", imm, sign_ext_imm);
+
+        // Test case 2: Negative value
+        imm = 16'b1111111111111111; // -1 in two's complement
+        #10;
+		  $display("Input imm = %b, Sign-extended imm = %b", imm, sign_ext_imm);
+
+        // Test case 3: Zero value
+        imm = 16'b0011000011001000;
+        #10;
+
+        // Add more test cases as needed
+		  $display("Input imm = %b, Sign-extended imm = %b", imm, sign_ext_imm);
+
+    end*/
+	 
+	 /*// Inputs
+    reg [31:0] pc;
+
+    // Outputs
+    wire [31:0] instruction;
+
+    // Instantiate the instruction_block
+    instruction_block uut (
+        .instruction(instruction), 
+        .pc(pc)
+    );
+
+    initial begin
+        // Initialize Inputs
+        pc = 0;
+
+        // Wait 100 ns for global reset to finish
+        #100;
+
+        // Test Case 1: Fetch the first instruction
+        pc = 32'd0; // Set program counter to the first instruction address
+        #10; // Small delay to allow for instruction fetch
+        $display("Test Case 1: Instruction at PC = 0: %b", instruction);
+
+        // Test Case 2: Fetch the next instruction
+        pc = 32'd4; // Increment PC to point to the next instruction address
+        #10;
+        $display("Test Case 2: Instruction at PC = 4: %b", instruction);
+
+        // Additional test cases can be added here
+
+    end*/
+	 
+
+	 
+	 /*wire [31:0] read_data;
+    reg byteOperations;
+    reg [17:0] address;
+    reg [31:0] write_data;
+    reg memRead;
+    reg memWrite;
+    
+    // Instantiate the memory_block module
+    memory_block uut (
+        .read_data(read_data),
+        .byteOperations(byteOperations),
+        .address(address),
+        .write_data(write_data),
+        .memRead(memRead),
+        .memWrite(memWrite)
+    );
+
+    // Initial values
+    initial begin
+        byteOperations = 1'b0; // Word operation by default
+        address = 18'b0;
+        write_data = 32'b10101010101010101010101010101010;
+        memRead = 1'b0;
+        memWrite = 1'b0;
+
+        // Perform a word read operation
+        memRead = 1'b1;
+        #10;
+        $display("Word Read: read_data = %b", read_data);
+
+        // Perform a byte read operation
+        byteOperations = 1'b1;
+        #10;
+        $display("Byte Read: read_data = %b", read_data);
+
+        // Perform a word write operation
+        byteOperations = 1'b0;
+        memWrite = 1'b1;
+        #10;
+        $display("Word Write: writing %b to memory", write_data);
+		  
+		  memWrite = 1'b0;
+        memRead = 1'b1;
+        #10;
+        $display("Word Read After Write: read_data = %b", read_data);
+
+        // Perform a byte write operation
+        byteOperations = 1'b1;
+        write_data = 8'b11001100; // Byte data
+        #10;
+        $display("Byte Write: writing %b to memory", write_data);
+		  
+        // Perform a byte read operation after writing
+        byteOperations = 1'b1;
+        #10;
+        $display("Byte Read After Write: read_data = %b", read_data);
+    end*/
+	 
+	 /*reg [31:0] write_data;
+    reg [5:0] read_reg1, read_reg2, write_reg;
+    reg regWrite;
+	 reg byteOperations;
+    wire [31:0] read_data1, read_data2;
+    
+    // Instantiate the Unit Under Test (UUT)
+    register_block uut(
+        .read_data1(read_data1),
+        .read_data2(read_data2),
+		  .byteOperations(byteOperations),
+        .write_data(write_data),
+        .read_reg1(read_reg1),
+        .read_reg2(read_reg2),
+        .write_reg(write_reg),
+        .regWrite(regWrite)
+    );
+
+    initial begin
+        // Initialize Inputs
+        write_data = 32'hFFFFFFFF; // 32-bitlik 1111...11 değeri
+        read_reg1 = 6'b000000;
+        read_reg2 = 6'b000000;
+        write_reg = 6'b000000;
+        regWrite = 1'b0;
+		  byteOperations = 1'b0;
+
+        // Wait for the global reset
+        #100;
+
+        // Test Case 1: Write and then read from the same register
+        $display("Test Case 1: Write and Read from the same register");
+        regWrite = 1'b1; // Enable writing
+        write_reg = 6'b000010; // Choose register 2 to write
+        // write_data is already set to 32'hFFFFFFFF
+        #10; // Wait for write to complete
+        regWrite = 1'b0; // Disable writing
+        read_reg1 = 6'b000010; // Set the read register to 2
+        #10; // Wait for read
+        $display("Read Data 1: %b (Expected: 11111111111111111111111111111111)", read_data1);
+
+        // Test Case 2: Write to one register and read from another without enabling write
+        $display("Test Case 2: Write to one and read from another without write enable");
+        write_reg = 6'b000011; // Choose register 3 to write
+        // write_data is already set to 32'hFFFFFFFF
+        #10; // Attempt to write without enabling write
+        read_reg2 = 6'b000011; // Set the read register to 3
+        #10; // Wait for read
+        $display("Read Data 2: %b (Expected: 00000000000000000000000000000000)", read_data2);
+
+        // Test Case 3: Write and then read from another register
+        $display("Test Case 3: Write and Read from different registers");
+        regWrite = 1'b1; // Enable writing
+        write_reg = 6'b000100; // Choose register 4 to write
+        // write_data is already set to 32'hFFFFFFFF
+        #10; // Wait for write to complete
+        regWrite = 1'b0; // Disable writing
+        read_reg1 = 6'b000100; // Set the read register to 4
+        read_reg2 = 6'b000010; // Set the read register to 2
+        #10; // Wait for read
+        $display("Read Data 1: %b (Expected: 11111111111111111111111111111111)", read_data1);
+        $display("Read Data 2: %b (Expected: 11111111111111111111111111111111)", read_data2);
+	end*/
+ 
+endmodule

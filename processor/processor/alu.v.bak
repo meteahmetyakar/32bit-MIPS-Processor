@@ -1,0 +1,35 @@
+module alu(
+    output [31:0] alu_result, // ALU result output
+    output zero_bit, // Output indicating if result is zero
+    
+    input [31:0] alu_src1, // Input operand 1
+    input [31:0] alu_src2, // Input operand 2
+    
+    input [2:0] alu_ctr // ALU control input
+);
+
+    wire [31:0] addRes, subRes, orRes, sltRes, andRes; // Intermediate results
+    wire cout; // Carry-out signal
+    
+    // AND operation
+    and_32_bit i0(.Result(andRes), .A(alu_src1), .B(alu_src2));
+    
+    // OR operation
+    or_32_bit i1(.Result(orRes), .A(alu_src1), .B(alu_src2));
+    
+    // Subtraction operation
+    substract i2(.res(subRes), .cout(cout), .a(alu_src1), .b(alu_src2), .carryIn(1'b1));
+    
+    // Less-than comparison operation
+    less_than_32_bit i3(.Result(sltRes), .A(alu_src1), .B(alu_src2));
+    
+    // Addition operation
+    cla_32 i4(.sum(addRes), .cout(cout), .a(alu_src1), .b(alu_src2), .cin(1'b0));
+    
+    // Zero-bit determination based on the result of subtraction
+    zero_bit_32_bit i5(.zero_bit(zero_bit), .A(subRes));
+    
+    // 8x1 multiplexer to select the appropriate result based on ALU control
+    mux_8x1 i6(.sel(alu_ctr), .in0(andRes), .in1(orRes), .in2(32'b0), .in3(32'b0), .in4(sltRes), .in5(addRes), .in6(subRes), .in7(32'b0), .Result(alu_result));
+
+endmodule

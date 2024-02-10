@@ -1,0 +1,114 @@
+Archive Project report for LastProject
+Sat Feb 10 17:29:47 2024
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Sat Feb 10 17:29:47 2024 ;
+; Revision Name          ; LastProject                           ;
+; Top-level Entity Name  ; mips                                  ;
+; Family                 ; Cyclone V                             ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory C:/Users/amete/Downloads/cc/cc/LastProject/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'C:/Users/amete/Downloads/cc/cc/LastProject/processor.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'LastProject.archive.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4828 megabytes
+    Info: Processing ended: Sat Feb 10 17:29:47 2024
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++--------------------------------------------------------------+
+; Files Archived                                               ;
++--------------------------------------------------------------+
+; File Name                                                    ;
++--------------------------------------------------------------+
+; 1bits/and_1bit.v                                             ;
+; 1bits/fulladder_1bit.v                                       ;
+; 1bits/fulladder_cla_1bit.v                                   ;
+; 1bits/nor_1bit.v                                             ;
+; 1bits/not_1bit.v                                             ;
+; 1bits/or_1bit.v                                              ;
+; 1bits/xor_1bit.v                                             ;
+; 4bits/fulladder_cla_4bit.v                                   ;
+; 32bits/and_32bit.v                                           ;
+; 32bits/fulladder_cla_32bit.v                                 ;
+; 32bits/lessthan_32bit.v                                      ;
+; 32bits/mux_2x1.v                                             ;
+; 32bits/mux_8x1.v                                             ;
+; 32bits/nor_32bit.v                                           ;
+; 32bits/not_32bit.v                                           ;
+; 32bits/or_32bit.v                                            ;
+; 32bits/sub_32bit.v                                           ;
+; 32bits/xor_32bit.v                                           ;
+; 32bits/zerobit_32bit.v                                       ;
+; c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf ;
+; instructions.mem                                             ;
+; LastProject.qpf                                              ;
+; LastProject.qsf                                              ;
+; memory.mem                                                   ;
+; processor/alu.v                                              ;
+; processor/alu_control.v                                      ;
+; processor/control_unit.v                                     ;
+; processor/instruction_block.v                                ;
+; processor/memory_block.v                                     ;
+; processor/mips.v                                             ;
+; processor/register_block.v                                   ;
+; processor/shift_left_2.v                                     ;
+; processor/sign_extend.v                                      ;
+; registers.mem                                                ;
+; simulation/modelsim/instructions.mem                         ;
+; simulation/modelsim/memory.mem                               ;
+; simulation/modelsim/registers.mem                            ;
+; testbench/testbench.v                                        ;
++--------------------------------------------------------------+
+
+

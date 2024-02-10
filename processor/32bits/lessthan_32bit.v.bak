@@ -1,0 +1,10 @@
+module lessthan_32bit(output result, input [31:0] a, input [31:0] b);
+
+	reg [31:0] diff;
+	
+	sub_32bit sub(diff, c_out, a, b, 0);
+	
+	and_1bit and1(result, diff[31], 1);
+
+
+endmodule

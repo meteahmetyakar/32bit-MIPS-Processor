@@ -1,0 +1,11 @@
+module sub_32bit(output [31:0] sub, output c_out, input [31:0] a, input [31:0] b, input c_in);
+
+	reg c_out;
+	wire [31:0] res;
+
+	not_32bit not32(b, b);
+	fulladder_cla_32bit(b, C_out, b, 32'b0, 1);
+	fulladder_cla_32bit(sub, c_out, a, b, c_in);
+	
+
+endmodule

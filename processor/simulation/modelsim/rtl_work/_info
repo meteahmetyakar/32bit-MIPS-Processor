@@ -1,0 +1,611 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/amete/OneDrive/Belgeler/LastProject/simulation/modelsim
+valu
+Z1 !s110 1705697440
+!i10b 1
+!s100 zGV<66BiX[efmeBFRLWoE0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ib0kETmgJ3i5XHVHLga7M_2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1705695184
+8C:/Users/amete/OneDrive/Belgeler/LastProject/processor/alu.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/processor/alu.v
+!i122 5
+L0 1 24
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1705697440.000000
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/processor/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/processor|C:/Users/amete/OneDrive/Belgeler/LastProject/processor/alu.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/processor
+Z8 tCvgOpt 0
+valu_control
+R1
+!i10b 1
+!s100 @353n=amlbg1>=1>z3d@l3
+R2
+IzLD4UHZbL80G]:TSKD^=a0
+R3
+R0
+w1705695591
+8C:/Users/amete/OneDrive/Belgeler/LastProject/processor/alu_control.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/processor/alu_control.v
+!i122 4
+L0 1 54
+R4
+r1
+!s85 0
+31
+Z9 !s108 1705697439.000000
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/processor/alu_control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/processor|C:/Users/amete/OneDrive/Belgeler/LastProject/processor/alu_control.v|
+!i113 1
+R6
+R7
+R8
+vand_1bit
+Z10 !s110 1705697441
+!i10b 1
+!s100 @A]F0N;QXAC[1zPei7G:g3
+R2
+I>;Z9<[a^D3@FB3H3:@cIS3
+R3
+R0
+w1702322511
+8C:/Users/amete/OneDrive/Belgeler/LastProject/1bits/and_1bit.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/1bits/and_1bit.v
+!i122 20
+Z11 L0 1 5
+R4
+r1
+!s85 0
+31
+Z12 !s108 1705697441.000000
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/1bits/and_1bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/1bits|C:/Users/amete/OneDrive/Belgeler/LastProject/1bits/and_1bit.v|
+!i113 1
+R6
+Z13 !s92 -vlog01compat -work work +incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/1bits
+R8
+vand_32bit
+R1
+!i10b 1
+!s100 X>R[dfL3LHPz7PMDcE[f91
+R2
+I3K1VZ[RFM?m7E1RQ`]?TV2
+R3
+R0
+w1702323043
+8C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/and_32bit.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/32bits/and_32bit.v
+!i122 14
+Z14 L0 1 37
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/and_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/32bits|C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/and_32bit.v|
+!i113 1
+R6
+Z15 !s92 -vlog01compat -work work +incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/32bits
+R8
+vcontrol_unit
+Z16 !s110 1705697439
+!i10b 1
+!s100 U<]_eJ7LR2I<o81@mEdOP0
+R2
+I:DW2:C`f6bhH4_aTkD7Mk1
+R3
+R0
+w1705694982
+8C:/Users/amete/OneDrive/Belgeler/LastProject/processor/control_unit.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/processor/control_unit.v
+!i122 3
+L0 1 59
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/processor/control_unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/processor|C:/Users/amete/OneDrive/Belgeler/LastProject/processor/control_unit.v|
+!i113 1
+R6
+R7
+R8
+vfulladder_cla_1bit
+R10
+!i10b 1
+!s100 Ba^Eo;V`Si_AX`f3Lj`hX2
+R2
+I=zL`mCOQ>nje]AC:L;??U2
+R3
+R0
+w1702322542
+8C:/Users/amete/OneDrive/Belgeler/LastProject/1bits/fulladder_cla_1bit.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/1bits/fulladder_cla_1bit.v
+!i122 19
+L0 1 15
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/1bits/fulladder_cla_1bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/1bits|C:/Users/amete/OneDrive/Belgeler/LastProject/1bits/fulladder_cla_1bit.v|
+!i113 1
+R6
+R13
+R8
+vfulladder_cla_32bit
+R1
+!i10b 1
+!s100 ^k?>R9zMC8m618[E1Fz6S0
+R2
+I;N><AU63g1mS9Fka=AFif1
+R3
+R0
+w1702323031
+8C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/fulladder_cla_32bit.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/32bits/fulladder_cla_32bit.v
+!i122 13
+L0 1 225
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/fulladder_cla_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/32bits|C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/fulladder_cla_32bit.v|
+!i113 1
+R6
+R15
+R8
+vfulladder_cla_4bit
+R1
+!i10b 1
+!s100 A@]TTNCG7@PF9IkTTMW>d0
+R2
+IfX16Oz9dj`4AYQ:jM12MV3
+R3
+R0
+w1702322978
+8C:/Users/amete/OneDrive/Belgeler/LastProject/4bits/fulladder_cla_4bit.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/4bits/fulladder_cla_4bit.v
+!i122 15
+Z17 L0 1 40
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/4bits/fulladder_cla_4bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/4bits|C:/Users/amete/OneDrive/Belgeler/LastProject/4bits/fulladder_cla_4bit.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work +incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/4bits
+R8
+vinstruction_block
+R10
+!i10b 1
+!s100 PZ:g4WK1l<PiYc4Sg=[m:1
+R2
+IMmzCWSz=DYl[@8[075_Y83
+R3
+R0
+w1705694682
+8C:/Users/amete/OneDrive/Belgeler/LastProject/processor/instruction_block.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/processor/instruction_block.v
+!i122 23
+L0 1 20
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/processor/instruction_block.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/processor|C:/Users/amete/OneDrive/Belgeler/LastProject/processor/instruction_block.v|
+!i113 1
+R6
+R7
+R8
+vlessthan_32bit
+R1
+!i10b 1
+!s100 `faRBEHm95D4YFfUXd0l=0
+R2
+I_EkLI?;<Xd=b2Z7m7?T<T3
+R3
+R0
+w1702323208
+8C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/lessthan_32bit.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/32bits/lessthan_32bit.v
+!i122 12
+L0 1 43
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/lessthan_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/32bits|C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/lessthan_32bit.v|
+!i113 1
+R6
+R15
+R8
+vmemory_block
+R10
+!i10b 1
+!s100 7L^kn^]V7OlB`hZZJK`VQ1
+R2
+I391`J:EGk:NPdOne8=ClW1
+R3
+R0
+w1705695793
+8C:/Users/amete/OneDrive/Belgeler/LastProject/processor/memory_block.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/processor/memory_block.v
+!i122 22
+L0 1 36
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/processor/memory_block.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/processor|C:/Users/amete/OneDrive/Belgeler/LastProject/processor/memory_block.v|
+!i113 1
+R6
+R7
+R8
+vmips
+R16
+!i10b 1
+!s100 FJFVCmRM:8iW=^c7VUh7[2
+R2
+IFR@J2o2:[@2k0aaR_>aA_3
+R3
+R0
+w1705697143
+8C:/Users/amete/OneDrive/Belgeler/LastProject/processor/mips.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/processor/mips.v
+!i122 2
+L0 1 93
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/processor/mips.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/processor|C:/Users/amete/OneDrive/Belgeler/LastProject/processor/mips.v|
+!i113 1
+R6
+R7
+R8
+vmux_2x1
+R1
+!i10b 1
+!s100 ABQ6n_m^bR^?2kD73UCQi3
+R2
+IC:9J@]2:Y8;TTbjgLZOLd2
+R3
+R0
+w1702322265
+8C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/mux_2x1.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/32bits/mux_2x1.v
+!i122 11
+L0 1 126
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/mux_2x1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/32bits|C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/mux_2x1.v|
+!i113 1
+R6
+R15
+R8
+vmux_8x1
+R1
+!i10b 1
+!s100 QW;Yn_edWdKm2]Y7zj;iS0
+R2
+I5Fe8L[RIUQ>LDM]B94KNN1
+R3
+R0
+w1702321707
+8C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/mux_8x1.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/32bits/mux_8x1.v
+!i122 10
+L0 1 58
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/mux_8x1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/32bits|C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/mux_8x1.v|
+!i113 1
+R6
+R15
+R8
+vnot_1bit
+R10
+!i10b 1
+!s100 ?zFa6:5hz`J3;RFIgNg8N0
+R2
+IgNGfVGL[zN7=g5@oPBR^N3
+R3
+R0
+w1702323078
+8C:/Users/amete/OneDrive/Belgeler/LastProject/1bits/not_1bit.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/1bits/not_1bit.v
+!i122 18
+R11
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/1bits/not_1bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/1bits|C:/Users/amete/OneDrive/Belgeler/LastProject/1bits/not_1bit.v|
+!i113 1
+R6
+R13
+R8
+vnot_32bit
+R1
+!i10b 1
+!s100 6gM5Cdf=J6E=EV^bj^RjZ2
+R2
+I4N;[U`YD7EBE4k1cmh9:V3
+R3
+R0
+w1702323080
+8C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/not_32bit.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/32bits/not_32bit.v
+!i122 9
+R14
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/not_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/32bits|C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/not_32bit.v|
+!i113 1
+R6
+R15
+R8
+vor_1bit
+R10
+!i10b 1
+!s100 EEAhN2<Em^UK<2O0VPPU`0
+R2
+ISmJVcWmf:>G[OaYC6ZRmV0
+R3
+R0
+w1702322515
+8C:/Users/amete/OneDrive/Belgeler/LastProject/1bits/or_1bit.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/1bits/or_1bit.v
+!i122 17
+R11
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/1bits/or_1bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/1bits|C:/Users/amete/OneDrive/Belgeler/LastProject/1bits/or_1bit.v|
+!i113 1
+R6
+R13
+R8
+vor_32bit
+R1
+!i10b 1
+!s100 1n^O]6<86TLI^K7FEilH_1
+R2
+I;I6PO@;bnPiM_PzCzWZ3D3
+R3
+R0
+w1702323046
+8C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/or_32bit.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/32bits/or_32bit.v
+!i122 8
+R14
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/or_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/32bits|C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/or_32bit.v|
+!i113 1
+R6
+R15
+R8
+vregister_block
+R10
+!i10b 1
+!s100 mG=cVGTZ3XYDdn;Rkd1@T0
+R2
+I@=Cf6Bg?0^7^U:0dRSm8]2
+R3
+R0
+w1705695311
+8C:/Users/amete/OneDrive/Belgeler/LastProject/processor/register_block.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/processor/register_block.v
+!i122 21
+L0 1 32
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/processor/register_block.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/processor|C:/Users/amete/OneDrive/Belgeler/LastProject/processor/register_block.v|
+!i113 1
+R6
+R7
+R8
+vshift_left_2
+R16
+!i10b 1
+!s100 >1fmT[C_8HHQD?=NjLV@43
+R2
+IlTR4S>=`<^BC[cN1Z34d40
+R3
+R0
+w1705694627
+8C:/Users/amete/OneDrive/Belgeler/LastProject/processor/shift_left_2.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/processor/shift_left_2.v
+!i122 1
+R17
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/processor/shift_left_2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/processor|C:/Users/amete/OneDrive/Belgeler/LastProject/processor/shift_left_2.v|
+!i113 1
+R6
+R7
+R8
+vsign_extend
+R16
+!i10b 1
+!s100 GMU8jj;_jB]X0A`Gof=>f3
+R2
+I`@=UPkng1GhT]bXI0@`EH1
+R3
+R0
+w1705694495
+8C:/Users/amete/OneDrive/Belgeler/LastProject/processor/sign_extend.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/processor/sign_extend.v
+!i122 0
+L0 1 42
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/processor/sign_extend.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/processor|C:/Users/amete/OneDrive/Belgeler/LastProject/processor/sign_extend.v|
+!i113 1
+R6
+R7
+R8
+vsub_32bit
+R1
+!i10b 1
+!s100 cYd<[9a]aQ3IobF<8Ed?91
+R2
+IzKGMTd1R<aTD1Qnaoj_aN1
+R3
+R0
+w1702323159
+8C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/sub_32bit.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/32bits/sub_32bit.v
+!i122 7
+L0 1 14
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/sub_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/32bits|C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/sub_32bit.v|
+!i113 1
+R6
+R15
+R8
+vtestbench
+R10
+!i10b 1
+!s100 `OSnN8D4409lRc25_MN@81
+R2
+IG_d09=g3cj?z1@MPV]l8]3
+R3
+R0
+w1705696977
+8C:/Users/amete/OneDrive/Belgeler/LastProject/testbench/testbench.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/testbench/testbench.v
+!i122 24
+L0 1 19
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/testbench/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/testbench|C:/Users/amete/OneDrive/Belgeler/LastProject/testbench/testbench.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work +incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/testbench
+R8
+vxor_1bit
+R10
+!i10b 1
+!s100 ^MJi9LNVFagO3D8=hU5a?2
+R2
+I2L:oI9ISRXYn3EZDA[=3S2
+R3
+R0
+w1702322518
+8C:/Users/amete/OneDrive/Belgeler/LastProject/1bits/xor_1bit.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/1bits/xor_1bit.v
+!i122 16
+L0 1 10
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/1bits/xor_1bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/1bits|C:/Users/amete/OneDrive/Belgeler/LastProject/1bits/xor_1bit.v|
+!i113 1
+R6
+R13
+R8
+vzerobit_32bit
+R1
+!i10b 1
+!s100 LF9@kH=OUd>2eAIH_NQ_g0
+R2
+IOoH[mRA;8bNMHzalg6iUR2
+R3
+R0
+w1705694362
+8C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/zerobit_32bit.v
+FC:/Users/amete/OneDrive/Belgeler/LastProject/32bits/zerobit_32bit.v
+!i122 6
+L0 1 45
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/zerobit_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amete/OneDrive/Belgeler/LastProject/32bits|C:/Users/amete/OneDrive/Belgeler/LastProject/32bits/zerobit_32bit.v|
+!i113 1
+R6
+R15
+R8

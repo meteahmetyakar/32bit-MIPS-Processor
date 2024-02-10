@@ -1,0 +1,96 @@
+module mips(
+    input clock
+);
+
+    reg [31:0] pc = 32'b0;
+    wire [2:0] ALUop;
+    wire [4:0] writeRegister;
+    wire [31:0] memoryRead;
+    wire [31:0] moveData;
+    wire [31:0] writeData1;
+    wire [31:0] ToJUMP;
+	 wire zeroBit;
+    wire [31:0] aluSrc2;
+    wire [31:0] shiftedAddress;
+    wire [31:0] addedPC;
+    wire [31:0] addedPC1;
+    wire pcSelect;
+    wire [31:0] jumpADDRESS;
+    wire [31:0] readData1, readData2;
+    wire [31:0] writeData;
+    wire [31:0] signExtended;
+    wire [2:0] aluControl;
+    wire [31:0] aluResult;
+
+    wire [31:0] instruction;
+    wire [31:0] pc_temp;
+    wire regDst, branch, memRead, memWrite, ALUsrc, regWrite, jump, byteOperations, move;
+    
+
+    // Instantiate modules
+    instruction_block i0(.instruction(instruction), .pc(pc));
+    control_unit i1(.regDst(regDst), .branch(branch),
+                    .memRead(memRead), .memWrite(memWrite),
+                    .ALUop(ALUop), .ALUsrc(ALUsrc),
+                    .regWrite(regWrite), .jump(jump),
+                    .byteOperations(byteOperations), .move(move),
+                    .opcode(instruction[31:26]));
+
+    // 2x1 mux to choose the register destination                        
+    assign writeRegister = (regDst) ? instruction[15:11] : instruction[20:16];
+
+    register_block i2(.read_data1(readData1), .read_data2(readData2),
+                        .byteOperations(byteOperations), .write_data(writeData),
+                        .read_reg1(instruction[25:21]), .read_reg2(instruction[20:16]),
+                        .write_reg(writeRegister), .regWrite(regWrite));
+
+								
+    sign_extend i3(.sign_ext_imm(signExtended), .imm(instruction[15:0]));
+
+    alu_control i4(.alu_ctr(aluControl), .function_code(instruction[5:0]), .ALUop(ALUop));
+
+ 
+    assign aluSrc2 = (ALUsrc) ? signExtended : readData2;
+
+    alu i5(.alu_result(aluResult), .zero_bit(zeroBit), .alu_src1(readData1), .alu_src2(aluSrc2), .alu_ctr(aluControl));
+
+    shift_left_2 i6(.shifted_address(shiftedAddress), .address(signExtended));
+
+    cla_32 i7(.sum(pc_temp), .cout(cout), .a(pc), .b(32'd4), .cin(1'b0)); 
+
+    cla_32 i8(.sum(addedPC1), .cout(cout), .a(shiftedAddress), .b(pc_temp), .cin(1'b0));
+
+    // Display information during clock edges
+    always @ (posedge clock) begin
+	 
+        $display("instruction = %b, zeroBit = %b  branch = %b, jump = %b", instruction, zeroBit, branch, jump);
+    end
+
+    // Branch check stage
+    and i9(pcSelect, zeroBit, branch);
+
+    // Select next PC based on branch condition
+    assign addedPC = (pcSelect) ? addedPC1 : pc_temp;
+
+    // Form jump address
+    assign jumpADDRESS = {4'b0, instruction[25:0], 2'b0};
+
+    // Select final PC based on jump condition
+    assign ToJUMP = (jump) ? jumpADDRESS : addedPC;
+
+    // Update PC at positive clock edges
+    always @ (posedge clock) begin
+        pc <= ToJUMP;
+    end
+
+    // Memory block
+    memory_block i10(.read_data(memoryRead), .byteOperations(byteOperations),
+                        .address(aluResult[17:0]), .write_data(readData2),
+                        .memRead(memRead), .memWrite(memWrite));
+
+    // for write back
+    assign writeData1 = (memRead) ? memoryRead : aluResult;
+
+    // for move
+    assign writeData = (move) ? readData1 : writeData1;    
+endmodule

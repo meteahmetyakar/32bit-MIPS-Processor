@@ -1,0 +1,49 @@
+Quartus Prime Archive log --	C:/Users/amete/Downloads/cc/cc/LastProject/processor.qarlog
+
+Archive:	C:/Users/amete/Downloads/cc/cc/LastProject/processor.qar
+Date:		Sat Feb 10 17:29:47 2024
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/amete/Downloads/cc/cc/LastProject/1bits/and_1bit.v
+C:/Users/amete/Downloads/cc/cc/LastProject/1bits/fulladder_1bit.v
+C:/Users/amete/Downloads/cc/cc/LastProject/1bits/fulladder_cla_1bit.v
+C:/Users/amete/Downloads/cc/cc/LastProject/1bits/nor_1bit.v
+C:/Users/amete/Downloads/cc/cc/LastProject/1bits/not_1bit.v
+C:/Users/amete/Downloads/cc/cc/LastProject/1bits/or_1bit.v
+C:/Users/amete/Downloads/cc/cc/LastProject/1bits/xor_1bit.v
+C:/Users/amete/Downloads/cc/cc/LastProject/32bits/and_32bit.v
+C:/Users/amete/Downloads/cc/cc/LastProject/32bits/fulladder_cla_32bit.v
+C:/Users/amete/Downloads/cc/cc/LastProject/32bits/lessthan_32bit.v
+C:/Users/amete/Downloads/cc/cc/LastProject/32bits/mux_2x1.v
+C:/Users/amete/Downloads/cc/cc/LastProject/32bits/mux_8x1.v
+C:/Users/amete/Downloads/cc/cc/LastProject/32bits/nor_32bit.v
+C:/Users/amete/Downloads/cc/cc/LastProject/32bits/not_32bit.v
+C:/Users/amete/Downloads/cc/cc/LastProject/32bits/or_32bit.v
+C:/Users/amete/Downloads/cc/cc/LastProject/32bits/sub_32bit.v
+C:/Users/amete/Downloads/cc/cc/LastProject/32bits/xor_32bit.v
+C:/Users/amete/Downloads/cc/cc/LastProject/32bits/zerobit_32bit.v
+C:/Users/amete/Downloads/cc/cc/LastProject/4bits/fulladder_cla_4bit.v
+C:/Users/amete/Downloads/cc/cc/LastProject/LastProject.qpf
+C:/Users/amete/Downloads/cc/cc/LastProject/LastProject.qsf
+C:/Users/amete/Downloads/cc/cc/LastProject/instructions.mem
+C:/Users/amete/Downloads/cc/cc/LastProject/memory.mem
+C:/Users/amete/Downloads/cc/cc/LastProject/processor/alu.v
+C:/Users/amete/Downloads/cc/cc/LastProject/processor/alu_control.v
+C:/Users/amete/Downloads/cc/cc/LastProject/processor/control_unit.v
+C:/Users/amete/Downloads/cc/cc/LastProject/processor/instruction_block.v
+C:/Users/amete/Downloads/cc/cc/LastProject/processor/memory_block.v
+C:/Users/amete/Downloads/cc/cc/LastProject/processor/mips.v
+C:/Users/amete/Downloads/cc/cc/LastProject/processor/register_block.v
+C:/Users/amete/Downloads/cc/cc/LastProject/processor/shift_left_2.v
+C:/Users/amete/Downloads/cc/cc/LastProject/processor/sign_extend.v
+C:/Users/amete/Downloads/cc/cc/LastProject/registers.mem
+C:/Users/amete/Downloads/cc/cc/LastProject/simulation/modelsim/instructions.mem
+C:/Users/amete/Downloads/cc/cc/LastProject/simulation/modelsim/memory.mem
+C:/Users/amete/Downloads/cc/cc/LastProject/simulation/modelsim/registers.mem
+C:/Users/amete/Downloads/cc/cc/LastProject/testbench/testbench.v
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 38 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

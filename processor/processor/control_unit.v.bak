@@ -1,0 +1,88 @@
+module control_unit(
+	output regDst,
+	output branch,
+	output memRead,
+	output memWrite,
+	output [2:0] ALUop,
+	output ALUsrc,
+	output regWrite,
+	output jump,
+	output byteOperations,
+	output move,
+	input [5:0] opcode
+);
+
+	wire [5:0] opNOT;
+	wire r_type, i_type, j_type, lw, sw, bne, beq;
+	wire andi, ori, slti, addi, subi, lb, sb, j, jal;
+	
+	not NOT1(opNOT[0],opcode[0]);
+	not NOT2(opNOT[1],opcode[1]);
+	not NOT3(opNOT[2],opcode[2]);
+	not NOT4(opNOT[3],opcode[3]);
+	not NOT5(opNOT[4],opcode[4]);
+	not NOT6(opNOT[5],opcode[5]);
+	
+	 // Check each opcode for instruction type
+	//000010
+	and isAddi(addi, opNOT[5], opNOT[4], opNOT[3], opNOT[2], opcode[1], opNOT[0]);
+	
+	// 000100
+	and isAndi(andi, opNOT[5], opNOT[4], opNOT[3], opcode[2], opNOT[1], opNOT[0]);
+	
+	// 000101
+	and isRri(ori, opNOT[5], opNOT[4], opNOT[3], opcode[2], opNOT[1], opcode[0]);
+	
+	// 100011
+	and isBeq(beq, opcode[5], opNOT[4], opNOT[3], opNOT[2], opcode[1], opcode[0]);
+	
+	//  100111
+	and isBne(bne, opcode[5], opNOT[4], opNOT[3], opcode[2], opcode[1], opcode[0]);
+	
+	//  000111
+	and isSlti(slti, opNOT[5], opNOT[4], opNOT[3], opcode[2], opcode[1], opcode[0]);
+	
+	
+	// 001000
+	and isLw(lw, opNOT[5], opNOT[4], opcode[3], opNOT[2], opNOT[1], opNOT[0]);
+	
+	//  010000
+	and isSw(sw, opNOT[5], opcode[4], opNOT[3], opNOT[2], opNOT[1], opNOT[0]);
+	
+	// 001001
+	and isLb(lb,opNOT[5], opNOT[4], opcode[3], opNOT[2], opNOT[1], opcode[0]);
+	
+	// 010001
+	and isSb(sb,opNOT[5], opcode[4], opNOT[3], opNOT[2], opNOT[1], opcode[0]);
+	// 000000
+	and isR_type(r_type,opNOT[0],opNOT[1],opNOT[2],opNOT[3],opNOT[4],opNOT[5]);
+	
+	
+	//  000011
+	and isSubi(subi,opNOT[5], opNOT[4], opNOT[3], opNOT[2], opcode[1], opcode[0]);
+	
+	// 111000
+	and isJ(j,opcode[5], opcode[4], opcode[3], opNOT[2], opNOT[1], opNOT[0]);
+	
+	// 111001
+	and isJal(jal,opcode[5], opcode[4], opcode[3], opNOT[2], opNOT[1], opcode[0]);
+	
+	// 100000
+	and isMove(move,opcode[5], opNOT[4], opNOT[3], opNOT[2], opNOT[1], opNOT[0]);
+	
+	or isByteOperation(byteOperations,sb,lb);
+   and regDestination(regDst,r_type,1'b1);
+	or isBranch(branch,bne,beq);
+	or isMemRead(memRead,lw,lb);
+	or isRegWrite(regWrite,r_type,lw,andi,ori,slti,addi,subi,lb,move);
+	or isJump(jump,j,jal);
+	or isMemWrite(memWrite,sw,sb);
+	nor isALUsrc(ALUsrc,r_type,bne,beq);
+	
+
+	
+	nor bit2Aluop(ALUop[2],andi,ori);
+	or bit1Aluop(ALUop[1],subi,beq,bne,r_type);
+	nor bit0Aluop(ALUop[0],andi,slti,subi,beq,bne);
+
+endmodule

@@ -1,0 +1,5 @@
+module not_1bit(output result, input a, b);
+
+	not not1(result, a, b);
+
+endmodule
